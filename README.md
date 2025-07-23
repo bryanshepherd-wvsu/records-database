@@ -46,13 +46,13 @@ function readCurrentDatabase($db_name, $table, $stat, $level, $sql_override = NU
 ```
 The file also contains numerous helper functions for printing tables, editing records, updating athletes, and interacting with game data.
 
-In general, each sport requires four tables: 
-athletes - Stores each athlete's information for display (name, season active, IsActive (Boolean)
-boxscores - Stores all stats for the games using uploaded XML files. New records are auto-calculated using these entries
-oldrecords - Records that are entered and stored verbatem then regurgitated in the appropriate database call.
-games - Stores all game information from each XML file uploaded. It includes identifiers including RPI code of opponent, season the game was played (extrapolated from the date), final score, final result.
-
-There is one general purpose database - NCAA_RPI: Stores opponent information according to the RPI code of the opponent. For NCAA, this is standardized and set according to NCAA. Non-NCAA application will require a custom opponent code list.
+In general, each sport requires four tables: <br>
+athletes - Stores each athlete's information for display (name, season active, IsActive (Boolean)<br>
+boxscores - Stores all stats for the games using uploaded XML files. New records are auto-calculated using these entries<br>
+oldrecords - Records that are entered and stored verbatem then regurgitated in the appropriate database call.<br>
+games - Stores all game information from each XML file uploaded. It includes identifiers including RPI code of opponent, season the game was played (extrapolated from the date), final score, final result.<br>
+<br>
+There is one general purpose database - NCAA_RPI: Stores opponent information according to the RPI code of the opponent. For NCAA, this is standardized and set according to NCAA. Non-NCAA application will require a custom opponent code list.<br>
 
 <b>Sport Modules</b>
 
